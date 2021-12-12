@@ -1,0 +1,81 @@
+@media all and (max-width:350px) {
+    header .logotipo img{
+    display: none;
+    }
+}
+header {
+    position: fixed;
+    background-color: black;
+    top:0;
+    display: flex;
+    width: 100%;
+    height: 104px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+header .logotipo img{
+    height: 100px;
+    width: 100px;
+}
+
+div img{
+    height: 50px;
+    width: 50px;
+}
+
+header h1 {
+    color: white;
+}
+
+.twoElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#menuCheckbox {
+    display: none;
+}
+.lupa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+#searchLupa{
+    margin-top: 0px;
+    height: 20px;
+}
+#menuCheckbox:checked~.menuList {
+    margin-top: 100px;
+    display: block;
+  }
+.menuList {
+    display: none;
+    margin: 0;
+    width: 33%;
+    height: 100%;
+    position: fixed;
+    font-weight: bold;
+    top: 0;
+    background-color: black;
+    color: white;
+    z-index: 99;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+button {
+    width: 100%;
+    height: 4rem;
+    background-color: gainsboro;
+    border-radius: 20px;
+  }
+
+  li button p {
+    color: black;
+    font-weight: bold;
+  }

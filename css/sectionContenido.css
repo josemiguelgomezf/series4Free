@@ -1,0 +1,127 @@
+/*CSS DE LA PAGINA DE CONTENIDO*/
+@media only screen and (pointer: fine){
+  div:hover > .textoCentradoImagen {
+    display:block;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all .5s;
+  }
+  .textoDispositivoTactil{
+    display: none;
+  }
+}
+.textoDispositivoTactil{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+}
+
+.textoDispositivoTactil a{
+    text-decoration:none;
+    z-index: 999;
+}
+
+.textoDispositivoTactil h1{
+    text-align: center;
+    font-size: 3vw;
+    color: aliceblue;
+}
+
+section {
+    margin-top: 104px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    gap: 5px;
+}
+section h1{
+    width: 100%;
+}
+.textoCentradoImagen{
+    display:none; 
+    transition: all .5s;
+}
+.contenedorImagen{
+    position: relative;
+    display: block;
+    text-align: left;
+}
+.textoCentradoImagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.textoCentradoImagen ul {
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 0px;
+    border: 0px;
+}
+.textoCentradoImagen ul li{
+    font-size: 1vw;
+    color: aliceblue;
+}
+div{
+    width: 30%;
+    height: auto;
+}
+.slide {
+    width: 90%;
+    height: auto;
+}
+.contenedorImagen img{
+    width: 100%;
+    height: 100%;
+}
+.imgCarrusell {
+    width: 100%;
+    height: 100%;
+}
+div .estrella{
+    height: auto;
+    width: 30%;
+}
+div .estrellaCheck{
+    height: auto;
+    width: 30%;
+}
+div .playIcon{
+    height: auto;
+    width: 30%;
+}
+label .estrellaCheck{
+    display: none;
+}
+.favoritoCheckbox, .favoritoCheckboxMovil{
+    display: none;
+}
+.favoritoCheckbox:checked~label .estrellaCheck {
+    display: inline-block;
+  }
+.favoritoCheckbox:checked~label .estrella {
+    display: none;
+  }
+/*Checkbox Estrella Movil*/
+.favoritoCheckboxMovil:checked~label .estrellaCheck {
+    display: inline-block;
+  }
+.favoritoCheckboxMovil:checked~label .estrella {
+    display: none;
+  }
+  .tituloSeccion, .textoDispositivoTactil{
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 3px 5px 2px #474747;
+}
+.tituloFichaCompleta{
+    color: white;
+    font-style: bold;
+}

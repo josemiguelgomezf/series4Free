@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+  font-family: Roboto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url("../material/fondoWeb.png");
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+p, a, label {
+  color: white;
+}
+
+button {
+  width: 70%;
+  height: 4rem;
+  background-color: gainsboro;
+  border-radius: 20px;
+}
+
+
+
